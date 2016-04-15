@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background: black;">
+    <div id="wrap">   
+        <div id="container">  
+            <div id="left_side" class="drag">
+                <div class="drag-title">bezier</div>
+                <canvas id="canvas" style="canvas"></canvas>
+            </div>  
+            <div id="ctro" class="drag">
+                <div class="drag-title">控制框</div>
+                <div class="box">
+                    
+            <div class="link" id="btn1"> 
+                <span class="pic"></span>
+                <a href="#" class="button">
+                <span class='line line-top'></span>
+                <span class='line line-right'></span>
+                <span class='line line-bottom'></span>
+                <span class='line line-left'></span>
+                运动
+                </a>
+            </div>
+
+            <div class="link" id="btn2" style="left: 130px;">
+                <span class="pic"></span>
+                <a href="#" class="button">
+                <span class='line line-top'></span>
+                <span class='line line-right'></span>
+                <span class='line line-bottom'></span>
+                <span class='line line-left'></span>
+                变色
+                </a>        
+            </div>          
+        </div>
+                <form oninput="x.value=second.value">second:0
+                    <input type="range" id="second" step="0.1" max="10" min="0.1" value="2">
+                    <output name="x" for="a" id="aaa">2</output>
+                </form>
+                </div>
+            <div id="content" class="drag">
+                <div class="drag-title">运动框</div>
+                <div class="middle-canvas1"><canvas id="canvas1" class="canvas1"></canvas></div>
+                <div class="middle-canvas2"><canvas id="canvas2" class="canvas2"></canvas></div>
+            </div>  
+            <div id="right_side" class="drag">
+            <div class="drag-title">实例</div>
+                <div class="cubic" id="c1"><img src="images/ease.png"></div>
+                <div class="cubic" id="c2"><img src="images/linear.png"></div>
+                <div class="cubic" id="c3"><img src="images/ease-in.png"></div>
+                <div class="cubic" id="c4"><img src="images/ease-out.png"></div>
+                <div class="cubic" id="c5"><img src="images/ease-in-out.png"></div>
+            </div>  
+        </div>  
+        <div id="footer">
+            <textarea rows="14" cols="48" autofocus id="csstext" >
+                
+            </textarea>
+        </div>  
+    </div> 
+
+</body>
+<script type="text/javascript" src="js/drag.js"></script>
+<script type="text/javascript" src="js/beisaier.js"></script>
+</html>
